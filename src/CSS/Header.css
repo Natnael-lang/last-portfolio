@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  body,
+  #root {
+    min-height: 100vh;
+    overflow-x: hidden;
+   
+  }
+  
+  .App {
+    width: 100%;
+
+    background-color: black;
+    color: white;
+   
+   
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 20px;
+    left: 0px;
+    right: 0px;
+    top: 0;
+ font-family: Arial, Helvetica, sans-serif;
+    z-index: 999;
+    background-color: black;
+  }
+  
+  .portfolio {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  
+  .port {
+    color: orange;
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ccc;
+  }
+  
+  .nav-link:active {
+    color: orange;
+  }
+  
+  .humberger {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .humberger {
+      display: block;
+    }
+  
+    .header-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      padding: 1rem;
+      display: none;
+    }
+  
+    .header-nav.active {
+      display: block;
+    }
+  
+    .header-nav ul {
+      flex-direction: column;
+    }
+  }

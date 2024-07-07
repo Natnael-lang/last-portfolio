@@ -1,0 +1,38 @@
+#Experiance{
+   padding-top: 120px;
+   height: 100vh;
+}
+.experiance-h1{
+    text-align: center;
+    
+}
+.experiance-h1-span{
+    color: orange;
+}
+.experiance-section{
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,144px));
+    gap: 10px;
+    place-content: center;
+}
+.experiance-section div{
+    display: grid;
+    place-content: center;
+}
+.experiance-section svg{
+   max-width: 100px;
+    max-height:100px;
+}
+svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.html-svg{
+    width: 144px;
+    height: 144px;
+}
